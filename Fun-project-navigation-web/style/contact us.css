@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contact{
+    display:flex;
+    flex-direction: row;
+    gap: 70px;
+    left: 0;
+    flex-wrap: wrap;
+    background-color: rgba(224, 177, 203, 0.3);
+
+}
+
+/*style user logo*/
+.logoImage{
+    width: 25rem;
+    left: 0;
+    position: relative;
+    display: flex;
+    gap: 4rem;
+    flex-direction: row;
+    transition: all 0.3s ease-in-out;
+    text-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*list styling*/
+
+.contactDetail ul{
+    line-height: 60px;
+    text-decoration: none;
+    background-color: rgba(127, 255, 212, 0.1);
+    padding: 30px;
+    font-size: 1rem;
+    border-radius: 20px;
+    transition: all 1s ease-in-out;
+    /*box-shadow: 6px -1px 8px black;*/
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.contactDetail{
+    margin-left: 16rem;
+    transition: all 0.3s ease-in-out;
+
+}
+/*Animation*/
+
+.logoImage:hover, .contactDetail:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+
+}
+
+
+
+.contactDetail a{
+    color: black;
+    text-decoration: none;
+    margin-top: 6px;
+    padding-top: 5px;
+
+ }
+
+/*contact title*/
+
+.contactDetail h1{
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+
+.contactDetail h1::before{
+    content: "";
+    top: 100%;
+    width: 0;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    text-decoration: none;
+    background-color: rgb(0, 0, 0);
+    transition: .8s;
+}
+.contactDetail h1:hover::before{
+    width: 100%;
+}
+/*social media */
+
+.socialIcon{
+
+}
+
+.lis{
+    display: inline-flex;
+    flex-direction: row;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    background: none !important;
+}
+
+.lis li{
+    list-style: none;
+}
+
+.lis:hover a{
+    transform: scale(1.1);
+}
+/*shadow*/
+
+.female_img{
+    position: absolute;
+    width: 50%;
+    margin-right: 5rem;
+    filter: blur(9px);
+}
